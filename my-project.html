@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add My Project</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/c7e7d73902.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav>
+      <div class="nav-left">
+        <a href="/index.html">
+          <img src="assets/img/logo.png" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="/my-project.html" class="nav-active">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <a href="/contact-form.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- content -->
+    <div class="wrapper-project">
+      <!-- add project form -->
+      <div class="container-project">
+        <form onsubmit="getData(event)">
+          <h1>ADD MY PROJECT</h1>
+
+          <!-- title -->
+          <div>
+            <label for="project-name">Project Name</label>
+            <input type="text" id="project-name" />
+          </div>
+
+          <!-- duration -->
+          <div class="date-container">
+            <div class="start-date">
+              <label for="start-date">Start Date</label>
+              <input type="date" name="" id="start-date" />
+            </div>
+            <div class="end-date">
+              <label for="end-date">End Date</label>
+              <input type="date" name="" id="end-date" />
+            </div>
+          </div>
+
+          <!-- description -->
+          <div>
+            <label for="description">Description</label>
+            <textarea name="" id="description"></textarea>
+          </div>
+
+          <!-- tech -->
+          <div>
+            <label>Technologies</label>
+            <div class="tech-container">
+              <div class="tech-left">
+                <div>
+                  <input type="checkbox" value="node-js" id="tech" />
+                  <label for="tech">Node Js</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" value="react-js" id="tech" />
+                  <label for="tech">React Js</label>
+                </div>
+              </div>
+
+              <div class="tech-right">
+                <div>
+                  <input type="checkbox" value="vue-js" id="tech" />
+                  <label for="tech">Vue Js</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" value="angular" id="tech" />
+                  <label for="tech">Angular</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- image -->
+          <div>
+            <label>Upload Image</label>
+            <div class="input-img-group">
+              <label for="inputImageProject">
+                <p>Choose</p>
+                <img src="assets/img/file.png" alt="file" />
+              </label>
+              <input type="file" id="inputImageProject" hidden />
+            </div>
+          </div>
+
+          <!-- submit button -->
+          <div class="btn">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- project list -->
+    <div class="wrapper-list">
+      <h1>MY PROJECT</h1>
+      <div class="project-container" id="list-show">
+        <div class="list-container">
+          <div class="img-list-container">
+            <img src="assets/img/profile.jpg" alt="photo" />
+          </div>
+          <div class="list-content">
+            <a href="/article.html">Dumbways Mobile App - 2022</a>
+            <p class="duration">Duration : 3 Month</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore,
+              consectetur.
+            </p>
+            <div class="icon-list">
+              <div class="icon-item">
+                <i class="fa-brands fa-node"></i>
+              </div>
+              <div class="icon-item">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="icon-item">
+                <i class="fa-brands fa-vuejs"></i>
+              </div>
+              <div class="icon-item">
+                <i class="fa-brands fa-angular"></i>
+              </div>
+            </div>
+            <div class="list-action">
+              <a href="#" class="edit-action">edit</a>
+              <a href="#" class="delete-action">delete</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- javascript -->
+  <script src="assets/js/my-project.js"></script>
+</html>

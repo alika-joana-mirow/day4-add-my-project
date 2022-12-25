@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 3 | Form Submission</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <nav>
+      <div class="nav-left">
+        <a href="/index.html">
+          <img src="assets/img/logo.png" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="/index.html" class="nav-active">Home</a>
+          </li>
+
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <a href="/contact-form.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- contact form -->
+    <div class="judul-form">
+      <h1>GET IN TOUCH</h1>
+    </div>
+    <div class="contact-form">
+      <div class="container-form">
+        <form action="">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" name="" id="email" />
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="text" name="" id="phone" />
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <select name="" id="subject">
+              <option disabled selected value="">
+                --- Choose the Subject ---
+              </option>
+              <option value="Subject 1">Subject One</option>
+              <option value="Subject 2">Subject Two</option>
+              <option value="Subject 3">Subject Three</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Your Message</label>
+            <textarea name="" id="message"></textarea>
+          </div>
+          <div class="btn">
+            <button type="button" onclick="submitForm()">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="assets/js/contact-form.js"></script>
+  </body>
+</html>
